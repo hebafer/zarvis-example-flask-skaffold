@@ -1,7 +1,5 @@
-FROM ubuntu:latest
-RUN apt-get update -y
-RUN apt-get install -y python-pip python-dev build-essential
-RUN pip install Flask==1.0.2
+FROM python:3.9.1
+RUN pip install flask
 
 ENV FLASK_APP hello.py
 
